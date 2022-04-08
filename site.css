@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: Arial,sans-serif;
+}
+.Position
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center; 
+}
+.button{
+  padding: 10px 20px;
+  background-color: #fff;
+  color:#000;
+  border:none;
+  margin-bottom: 20px;
+  outline:none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-left: 50px;
+  
+}
+
+/* Barre de navigation */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  position: sticky; 
+}
+
+nav .logo
+{
+    text-align: center;
+    margin: 1px;
+    margin-bottom: -5px;
+    padding: 6px 8px 0 0 ;
+    height: 60px ;		
+}
+
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+}
+.croix{
+  font-family: Arial;
+  font-weight: bolder;
+  
+}
+
+.onglets p a
+{
+  list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+
+.onglets p
+{
+  color: white;
+}
+
+.onglets p a::after
+{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.onglets p a:hover::after
+{
+    width: 100% ;
+}
+nav .onglets p{
+  font-size: 17px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+nav .onglets input{
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border:none;
+  background-color: #f2f2f2;
+  outline:none;
+}
+/* Fin de la barre de navigation */
+
+/* Header */
+  
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebeded;
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+  position: static;
+}
+
+/* Fin du header */
+
+/* Section principale */
+
+.noir
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.Titre-main 
+{
+  color: black;
+  font-size: 45px;
+  font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+.indé
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.main{
+  margin: 20px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.main h1
+{
+  color: black;
+}
+/* Toutes les cartes */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+}
+.cards .card{
+  margin-right: 20px;
+  cursor:pointer;
+  
+}
+.cards .card img{
+  width: 350px;
+}
+.cards .card .Titre-card{
+  color: black;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.cards .card .petite-description p{
+  margin-top: -10px;
+  color: black;
+  display: flex;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  
+}
+/*changer la couleur et l'espacement*/
+.main tr{
+  margin-bottom: 50px;
+}
+
+/* Fin de toutes les cartes */
+
+/* Fin de la section principale */
+
+/*Avant-Footer*/
+.Titre
+{
+  margin-top: 75px;
+  color: black;
+}
+.Avant-footer
+{
+   margin-top: 0;
+  background-color: #222F3E ;
+  position: sticky;
+  align-items: center;
+  }
+ 
+.Avant-footer a
+{
+   color: white;
+  text-decoration: none;
+   
+}
+.Avant-footer p a::after
+{
+    content: '' ;
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li{
+	color:black;
+}
+
+.Avant-footer p a:hover::after
+{
+    width: 100% ;
+}
+tr td {
+	color:black;
+}
+/*Avant-Footer*/
+
+
+/* Pied de page */
+ .fin {
+  
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  position: static;
+}
+footer .social-media{
+  display: flex;
+}
+footer .social-media p{
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 5px;
+  text-align:center;
+  width: 20px;
+  cursor:pointer; 
+}
+footer .bas-onglets
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+.bas-onglets  p
+{
+  font-size: 20px;
+  padding: 15px;
+}
+/* Fin du pied de page */
+
+
+/*panier*/
+.panier-texte
+{
+  font-size: 25px;
+  color: black;
+}
+/* Fin panier*/
+
+/*Taille d'écran*/
+@media screen and (max-width: 640px){
+  nav .onglets .link, nav h1{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+}
+/*Fin taille d'écran*/
